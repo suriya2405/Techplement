@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Dashboard</h1>
+            <div class="search-bar">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="weather-card">
+            <div class="weather-info">
+                <div class="weather-detail">
+                    <p id="city">City: --</p>
+                    <p id="temperature">Temperature: --</p>
+                    <p id="weather">Weather: -- <i id="weatherIcon" class="fas"></i></p>
+                </div>
+                <div class="weather-time">
+                    <p id="time">Time: --</p>
+                </div>
+            </div>
+        </div>
+        <div class="forecast">
+            <h2>7-Day Forecast</h2>
+            <div id="forecast-cards" class="forecast-cards"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
